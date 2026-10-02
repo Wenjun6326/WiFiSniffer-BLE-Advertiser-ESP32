@@ -1,0 +1,33 @@
+# Baseline rules for a machine that holds a 4 GB ESP32 toolchain next to the
+# source.  Everything below is either generated, machine-specific, or a large
+# reproducible download; the published repository is source only.
+
+# ---- toolchain and downloads (kept locally, never published) ----
+.arduino15/
+.arduino-dl/
+Arduino/
+.tmp/
+
+# ---- build output ----
+build/
+build-*/
+*.bin
+*.elf
+*.map
+*.hex
+
+# ---- runtime byproducts ----
+capture.csv
+capture-*.csv
+usb-watch.log
+*.log
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- editors / OS ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

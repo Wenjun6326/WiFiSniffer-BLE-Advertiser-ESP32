@@ -1,0 +1,10 @@
+# Normalise line endings in the repository instead of warning about them on
+# every commit.  Git stores LF and checks out whatever the platform prefers;
+# PowerShell and the Arduino toolchain are both happy either way.
+* text=auto
+
+# Binary, never normalise.
+*.png binary
+*.exe binary
+*.bin binary
+*.zip binary
